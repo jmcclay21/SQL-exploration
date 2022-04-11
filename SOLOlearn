@@ -1,0 +1,22 @@
+Selecting Multiple COlumns:
+
+SELECT Firstname, Lastname, City
+FROM customers; 
+
+LIMIT
+SELECT ID, Firstname, LastName, City
+FROM customers LIMIT 5;
+
+Adding offset will start at the number in table
+
+EX: SELECT ID, FirstName, LastName, City
+FROM customers OFFSET 3 LIMIT 4;
+= ID begins at 4, (removing first 3)
+
+FULLY QUALIFIED NAMES
+
+Following statements are equivalent:
+SELECT City FROM customers;
+and
+SELECT customers.city FROM customers;
+
